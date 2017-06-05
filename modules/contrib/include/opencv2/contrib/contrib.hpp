@@ -642,6 +642,14 @@ namespace cv
                                   const std::vector<float>& minGradientMagnitudes=std::vector<float>(),
                                   int transformType=RIGID_BODY_MOTION );
 
+    CV_EXPORTS bool RGBDOdometry_UME( Mat& Rt, const Mat& initRt,
+                                  const Mat& image0, const Mat& depth0, const Mat& mask0,
+                                  const Mat& image1, const Mat& depth1, const Mat& mask1,
+                                  const Mat& cameraMatrix, float minDepth=0.f, float maxDepth=4.f, float maxDepthDiff=0.07f,
+                                  const std::vector<int>& iterCounts=std::vector<int>(),
+                                  const std::vector<float>& minGradientMagnitudes=std::vector<float>(),
+                                  int transformType=RIGID_BODY_MOTION );
+
     /**
     *Bilinear interpolation technique.
     *

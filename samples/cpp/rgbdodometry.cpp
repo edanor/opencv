@@ -150,7 +150,7 @@ int main(int argc, char** argv)
     const float maxDepthDiff = 0.07f; //in meters
 
     tm.start();
-    bool isFound = cv::RGBDOdometry( Rt, Mat(),
+    bool isFound = cv::RGBDOdometry_UME( Rt, Mat(),
                                      grayImage0, depthFlt0, Mat(),
                                      grayImage1, depthFlt1, Mat(),
                                      cameraMatrix, minDepth, maxDepth, maxDepthDiff,
